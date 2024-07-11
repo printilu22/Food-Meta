@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Webpage Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="feedback.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Css Shapes</title>
+</head>
+
+<body>
+
+  <div class="nav">
+    <div class="main">
+      <div class="navbar">
+        <div class="icon">
+          <h2 class="logo">FoodMeta</h2>
+        </div>
+  
+        <div class="menu">
+          <ul>
+            <li><a href="homepage.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT</a></li>
+            <li><a href="review.html">REVIEWS</a></li>
+            <li><a href="our team.html">OURTEAM</a></li>
+          </ul>
+        </div>
+  
+        <div class="search">
+          <input class="srch" type="search" name="" placeholder="Type To Search">
+          <a href="#"> <button class="btn">Search</button></a>
+        </div>
+  </div>
+
+  
+
+      <div class="feedback">
+        <div class="card">
+          <h2>Contact Us</h2>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text">
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="form-group">
+                <label>Surname</label>
+                <input type="text">
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="form-group">
+                <label>Email</label>
+                <input type="text">
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="form-group">
+                <label>Phone</label>
+                <input type="text">
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="form-group">
+                <label>Message</label>
+                <textarea></textarea>
+              </div>
+            </div>
+  
+            <div class="col">
+              <input type="submit" value="Submit">
+            </div>
+          </div>
+        </div>
+  
+        </form>
+      </div>
+      </div>
+
+      
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxiAEZjlpPCVyr7n6gySl1nI56U_xFUzjXT27QkUpb4xB2DfNgEzawTVLP_wcgLEXiY/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+  </div>
+  </div>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
